@@ -1,8 +1,8 @@
 "use client";
-import { SignIn } from "../actions";
-import { ClipLoader } from "react-spinners";
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { SignOut } from "../actions";
+import { useState } from "react";
+import { ClipLoader } from "react-spinners";
 
 export default function SignInButton() {
   const [loading, setLoading] = useState(false);
@@ -11,22 +11,22 @@ export default function SignInButton() {
       onSubmit={async (e) => {
         e.preventDefault();
         setLoading(true);
-        await SignIn("google");
+        await SignOut();
         setLoading(false);
       }}
     >
       <Button
-        variant="default"
         type="submit"
+        variant="default"
         className="flex items-center"
         disabled={loading}
       >
         {loading ? (
           <>
-            Signing In. <ClipLoader />
+            Logging out. <ClipLoader />
           </>
         ) : (
-          "Sign in with Google"
+          "Sign Out"
         )}
       </Button>
     </form>
