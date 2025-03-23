@@ -43,8 +43,8 @@ export default function Home() {
         Get your code <span className="text-red-500">roasted</span> by AI 🔥
       </h1>
       <p className="text-center text-lg text-gray-700 hidden md:block mb-6">
-        Get roasted by AI and learn how to write better code, but don't worry,
-        we'll be gentle.
+        Get roasted by AI and learn how to write better code, but don`&apos;`t
+        worry, we`&apos;`ll be gentle.
       </p>
 
       {/* Form and Code Input */}
@@ -64,7 +64,6 @@ export default function Home() {
             placeholder="Type your code here..."
             required
             className="w-full p-4 border-none focus:border-none active:border-none border-gray-300 rounded-lg focus:outline-none   mb-4"
-            rows="6"
           />
         </form>
         <div className="min-h-[100%] border border-red-500 rounded-md w-full">
