@@ -43,8 +43,8 @@ export default function Home() {
         Get your code <span className="text-red-500">roasted</span> by AI 🔥
       </h1>
       <p className="text-center text-lg text-gray-700 hidden md:block mb-6">
-        Get roasted by AI and learn how to write better code, but don`&apos;`t
-        worry, we`&apos;`ll be gentle.
+        Get roasted by AI and learn how to write better code, but don&apos;t
+        worry, we&apos;ll be gentle.
       </p>
 
       {/* Form and Code Input */}
